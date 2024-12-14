@@ -1,0 +1,46 @@
+<!DOCTYPE=html>
+<html>
+    <head>
+        <title>Gerador de senha</title>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Gerador de senhas seguras</h1>
+        <br>
+        <table style="background-color: #dddddd; padding: 20px; border: 1px solid #ccc; width: 500px">
+			<form action="/submit" method="post">
+			    <p>Informe a quantidade de caracteres desejada:</p>
+			    <input type="number" name="qtd_char">
+
+                <fieldset>
+                    <legend>Escolha os tipos de caracteres válidos: </legend>
+                    <div>
+                        <input type="checkbox" id="char_letras_mai" name="char_letras_mai" />
+                        <label for="char_letras_mai"> LETRAS MAIÚSCULAS</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" id="char_letras_min" name="char_letras_min" />
+                    <label for="char_letras_min"> letras minúsculas </label>
+                    </div>
+                    <div>
+                    <input type="checkbox" id="char_num" name="char_num" />
+                    <label for="char_num"> Números </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="char_esp" name="char_esp" />
+                        <label for="char_esp"> Especiais </label>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Gerar</button>
+			</form>
+		</table>
+
+        <p id="senha_gerada"></p>
+        <button onclick="copiar_texto()">Copiar</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>
