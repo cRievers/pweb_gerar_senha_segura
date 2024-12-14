@@ -9,24 +9,25 @@
     <body>
         <h1>Gerador de senhas seguras</h1>
         <br>
-        <table style="background-color: #dddddd; padding: 20px; border: 1px solid #ccc; width: 500px">
+        <table>
 			<form action="/submit" method="post">
-			    <p>Informe a quantidade de caracteres desejada:</p>
-			    <input type="number" name="qtd_char">
-
+                <fieldset id="qtd">
+                    <legend>Informe a quantidade de caracteres </legend>
+			        <input type="number" name="qtd_char">
+                </fieldset>
                 <fieldset>
-                    <legend>Escolha os tipos de caracteres válidos: </legend>
+                    <legend>Escolha os tipos de caracteres válidos </legend>
                     <div>
                         <input type="checkbox" id="char_letras_mai" name="char_letras_mai" />
                         <label for="char_letras_mai"> LETRAS MAIÚSCULAS</label>
                     </div>
                     <div>
-                    <input type="checkbox" id="char_letras_min" name="char_letras_min" />
-                    <label for="char_letras_min"> letras minúsculas </label>
+                        <input type="checkbox" id="char_letras_min" name="char_letras_min" />
+                        <label for="char_letras_min"> letras minúsculas </label>
                     </div>
                     <div>
-                    <input type="checkbox" id="char_num" name="char_num" />
-                    <label for="char_num"> Números </label>
+                        <input type="checkbox" id="char_num" name="char_num" />
+                        <label for="char_num"> Números </label>
                     </div>
                     <div>
                         <input type="checkbox" id="char_esp" name="char_esp" />
